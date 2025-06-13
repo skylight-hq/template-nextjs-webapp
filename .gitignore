@@ -1,0 +1,16 @@
+.DS_Store
+.next
+node_modules
+coverage
+build
+npm-debug.log*
+.env*
+*.tsbuildinfo
+next-env.d.ts
+out
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

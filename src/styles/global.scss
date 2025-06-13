@@ -1,0 +1,78 @@
+/***************************************
+ * Template specific styling
+ ***************************************/
+
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 140%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $template-bg-color;
+  position: relative;
+}
+
+/* main content */
+.page-container {
+  margin: 0 auto;
+  max-width: 350px;
+  width: calc(100% - 80px);
+
+  @media (width >= 40em) {
+    width: calc(100% - 280px);
+    max-width: 744px;
+  }
+
+  @media (width >= 64em) {
+    width: calc(100% - 320px);
+    max-width: 1120px;
+  }
+
+  &--full-height {
+    min-height: calc(100vh - 11.75rem);
+  }
+}
+
+/* hero, subfooter*/
+.page-container--lg {
+  margin: 0 auto;
+  max-width: 350px;
+  width: calc(100% - 80px);
+
+  @media (width >= 40em) {
+    width: calc(100% - 180px);
+    max-width: 844px;
+  }
+
+  @media (width >= 64em) {
+    width: calc(100% - 240px);
+    max-width: 1200px;
+  }
+}
+
+/* header, footer*/
+.page-container--xl {
+  margin: 0 auto;
+  max-width: 350px;
+  width: calc(100% - 80px);
+
+   @media (width >= 40em) {
+    width: calc(100% - 160px);
+    max-width: 864px;
+  }
+
+  @media (width >= 64em) {
+    width: calc(100% - 160px);
+    max-width: 1280px;
+  }
+}
