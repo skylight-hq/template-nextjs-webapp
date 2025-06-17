@@ -15,10 +15,10 @@ const Header: React.FC = () => {
             "text-white",
             "grid-row",
             "flex-row",
-            "flex-align-center"
+            "flex-align-center",
           )}
         >
-        NextJS Web Application Template
+          NextJS Web Application Template
         </Link>
       </div>
     </header>

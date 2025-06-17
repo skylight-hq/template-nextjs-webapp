@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           "grid-row",
           "flex-row",
           "flex-align-center",
-          "flex-justify"
+          "flex-justify",
         )}
       >
         For for information contact support@placeholder.email
