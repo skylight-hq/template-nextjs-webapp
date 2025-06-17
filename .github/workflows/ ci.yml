@@ -46,10 +46,6 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Download Build Artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: next-template-build
     - name: Run application build
       run: npm run build
     - name: Run Playwright tests
