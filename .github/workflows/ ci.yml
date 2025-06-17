@@ -1,11 +1,24 @@
-name: Playwright Tests
+name: CI
 on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [ "**" ]
 jobs:
-  test:
+  #lint and formatting checks
+  # build
+  # unit test
+  # e2e test
+  lint-formatting-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run lint and formatting checks
+      run: |
+        npm ci
+        npm run lint
+        npm run prettier
+  e2e-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
