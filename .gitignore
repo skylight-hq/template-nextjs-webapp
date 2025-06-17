@@ -1,4 +1,5 @@
 .DS_Store
+.swc
 .next
 node_modules
 coverage
