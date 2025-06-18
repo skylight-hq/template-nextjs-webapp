@@ -14,7 +14,7 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.config({
     ignorePatterns:"*/__mocks__/**/*.js",
-    extends: ["eslint:recommended","next/core-web-vitals", "next/typescript", "prettier"],
+    extends: ["eslint:recommended","next/core-web-vitals", "next/typescript","plugin:jsx-a11y/recommended", "prettier"],
     plugins: ["unused-imports"],
     rules:{
       "@typescript-eslint/no-unused-vars": ["warn", { 
