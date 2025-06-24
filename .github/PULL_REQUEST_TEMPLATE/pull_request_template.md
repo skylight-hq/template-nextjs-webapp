@@ -16,7 +16,7 @@ If this pull request addresses an issue, please link it here (e.g., `Closes #123
 - [ ] I have tested the changes and verified they work as expected
 - [ ] I have updated documentation as needed
 - [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] Implementation passes accessibility scan from Axe (if applicable)
+- [ ] Implementation passes axe accessibility scan (if applicable)
 
 ## Screenshots (if applicable)
 Add screenshots to help explain your changes, if applicable.
