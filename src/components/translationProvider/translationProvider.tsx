@@ -3,7 +3,7 @@
 import React, { memo, PropsWithChildren } from "react";
 import { I18nextProvider } from "react-i18next";
 import { createInstance, Resource } from "i18next";
-import initTranslations from "@/i18n";
+import initTranslations from "@/utils/i18n";
 
 interface TranslationProviderProps {
   locale: string;

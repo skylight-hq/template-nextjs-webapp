@@ -36,16 +36,16 @@ const Navigation: React.FC = () => {
   return (
     <nav>
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="usa-button"
         onClick={handleChange("en")}
       >
-        English
+         <span lang="en">English</span>
       </button>
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="usa-button"
         onClick={handleChange("es")}
       >
-        Espanol
+         <span lang="es">Español</span>
       </button>
     </nav>
   );
