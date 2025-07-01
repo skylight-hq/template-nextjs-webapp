@@ -2,6 +2,7 @@ import HeaderStyle from "./header.module.scss";
 import Link from "next/link";
 import classNames from "classnames";
 import { PAGES } from "@/utils/constants";
+import Navigation from "../menu/menu";
 
 const Header: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const Header: React.FC = () => {
         >
           NextJS Web Application Template
         </Link>
+         <Navigation />
       </div>
     </header>
   );
